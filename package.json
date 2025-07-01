@@ -1,0 +1,19 @@
+{
+  "name": "reto-automatizacion-coordinadora",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cucumber-js --require-module ts-node/register --require features/**/*.ts --format json:cucumber_report.json",
+    "posttest": "node generate-report.js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.53.1",
+    "@serenity-js/assertions": "^3.32.2",
+    "@serenity-js/core": "^3.32.2",
+    "@serenity-js/cucumber": "^3.32.2",
+    "@serenity-js/playwright": "^3.32.2",
+    "@serenity-js/rest": "^3.32.2",
+    "cucumber-html-reporter": "^7.2.0",
+    "ts-node": "^10.9.2"
+  }
+}

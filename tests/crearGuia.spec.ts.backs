@@ -1,0 +1,41 @@
+// import { test, expect } from '@playwright/test';
+// import { actor } from '../src/actor';
+// import { CrearGuia } from '../src/tasks/CrearGuia';
+// import { guiaBase } from '../src/models/GuiaPayload';
+// import { LastResponse } from '@serenity-js/rest';
+
+// test('debe permitir crear guía con datos válidos', async () => {
+//   const datos = { ...guiaBase };
+
+//   await actor.attemptsTo(CrearGuia.conDatos(datos));
+
+//   const respuesta = await actor.answer(LastResponse.status());
+//   expect(respuesta).toBe(200);
+// });
+
+// test('debe aceptar valor mínimo $1', async () => {
+//   const datos = { ...guiaBase, valorRecaudar: "1" };
+
+//   await actor.attemptsTo(CrearGuia.conDatos(datos));
+
+//   const respuesta = await actor.answer(LastResponse.status());
+//   expect(respuesta).toBe(200);
+// });
+
+// test('debe aceptar valor máximo $16.000.000', async () => {
+//   const datos = { ...guiaBase, valorRecaudar: "16000000" };
+
+//   await actor.attemptsTo(CrearGuia.conDatos(datos));
+
+//   const respuesta = await actor.answer(LastResponse.status());
+//   expect(respuesta).toBe(200);
+// });
+
+// test('debe rechazar guía sin referencia de recaudo', async () => {
+//   const datos = { ...guiaBase, referenciaRecaudo: "" };
+
+//   await actor.attemptsTo(CrearGuia.conDatos(datos));
+
+//   const respuesta = await actor.answer(LastResponse.status());
+//   expect(respuesta).toBe(400); // O el código real que devuelva el sistema
+// });

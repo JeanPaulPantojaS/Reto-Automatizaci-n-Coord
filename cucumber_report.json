@@ -1,0 +1,528 @@
+[
+  {
+    "description": "  Como usuario del sistema de generación de guías\n  Quiero poder crear una guía con el servicio de Recaudo Contra Entrega\n  Para que se almacenen correctamente el servicio, referencia y valor a recaudar",
+    "elements": [
+      {
+        "description": "",
+        "id": "crear-guía-con-servicio-de-recaudo-contra-entrega;crear-guía-con-datos-obligatorios-correctamente-diligenciados",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Crear guía con datos obligatorios correctamente diligenciados",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que el usuario proporciona todos los campos obligatorios",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2222652
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "envía una solicitud de creación de guía con servicio Recaudo Contra Entrega",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2443010158
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "el sistema debe responder con estado 200",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2124339
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "debe almacenar la guía correctamente",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1489171
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "crear-guía-con-servicio-de-recaudo-contra-entrega;crear-guía-con-valor-a-recaudar-en-el-límite-inferior-($1)",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Crear guía con valor a recaudar en el límite inferior ($1)",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "que el valor a recaudar es $1",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141192
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "se envía la solicitud",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1827505258
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "el sistema debe aceptar la guía",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 922981
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "crear-guía-con-servicio-de-recaudo-contra-entrega;crear-guía-con-valor-a-recaudar-en-el-límite-superior-($16.000.000)",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Crear guía con valor a recaudar en el límite superior ($16.000.000)",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "que el valor a recaudar es $16.000.000",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203148
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "se envía la solicitud",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1598583612
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "el sistema debe aceptar la guía",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 543157
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "crear-guía-con-servicio-de-recaudo-contra-entrega;crear-guía-sin-campo-\"observaciones\"",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Crear guía sin campo \"observaciones\"",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "que el usuario omite el campo observaciones",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 288484
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "se envía la solicitud",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1405147374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "el sistema debe aceptar la guía",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 445451
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "crear-guía-con-servicio-de-recaudo-contra-entrega;crear-guía-con-caracteres-especiales-en-la-referencia",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Crear guía con caracteres especiales en la referencia",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "que la referencia de recaudo contiene caracteres especiales como %, $, #",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 221867
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "se envía la solicitud",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1493580576
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "el sistema debe aceptar y almacenar correctamente la referencia",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:86"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4304274
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "crear-guía-con-servicio-de-recaudo-contra-entrega;omitir-el-campo-\"referencia-de-recaudo\"",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Omitir el campo \"Referencia de recaudo\"",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "que el campo \"Referencia de recaudo\" está vacío o no se envía",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 351246
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "se envía la solicitud",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 375346323
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "el sistema debe rechazar la guía con un mensaje de error",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3372644
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "crear-guía-con-servicio-de-recaudo-contra-entrega;omitir-el-campo-\"valor-a-recaudar\"",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Omitir el campo \"Valor a recaudar\"",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 39,
+            "name": "que el campo \"Valor a recaudar\" está vacío o no se envía",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 145576
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "se envía la solicitud",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 373805990
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "el sistema debe rechazar la guía con un mensaje de error",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2640052
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "crear-guía-con-servicio-de-recaudo-contra-entrega;ingresar-un-valor-a-recaudar-menor-a-$1",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "Ingresar un valor a recaudar menor a $1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 44,
+            "name": "que el valor a recaudar es 0",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 215299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 45,
+            "name": "se envía la solicitud",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1439507321
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "el sistema debe rechazar la guía porque el valor a recaudar es inválido",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:110"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3745736,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m200\u001b[39m\nReceived array: \u001b[31m[400, 422]\u001b[39m\n    at Proxy.<anonymous> (/mnt/c/Users/juand/OneDrive/Documentos/Reto Automatizacion Coordinadora/node_modules/playwright/lib/matchers/expect.js:221:24)\n    at World.<anonymous> (/mnt/c/Users/juand/OneDrive/Documentos/Reto Automatizacion Coordinadora/features/step_definitions/crearGuia.steps.ts:111:22)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "crear-guía-con-servicio-de-recaudo-contra-entrega;ingresar-un-valor-a-recaudar-mayor-a-$20.000.000",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "Ingresar un valor a recaudar mayor a $20.000.000",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 49,
+            "name": "que el valor a recaudar es $20.000.000",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131297
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "se envía la solicitud",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3065055911
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "el sistema debe rechazar la guía",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:95"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 985919,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m200\u001b[39m\nReceived array: \u001b[31m[400, 422]\u001b[39m\n    at Proxy.<anonymous> (/mnt/c/Users/juand/OneDrive/Documentos/Reto Automatizacion Coordinadora/node_modules/playwright/lib/matchers/expect.js:221:24)\n    at World.<anonymous> (/mnt/c/Users/juand/OneDrive/Documentos/Reto Automatizacion Coordinadora/features/step_definitions/crearGuia.steps.ts:96:22)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "crear-guía-con-servicio-de-recaudo-contra-entrega;ingresar-una-referencia-de-recaudo-demasiado-larga",
+        "keyword": "Scenario",
+        "line": 53,
+        "name": "Ingresar una referencia de recaudo demasiado larga",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 54,
+            "name": "que la referencia supera el límite de 30 caracteres",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141509
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 55,
+            "name": "se envía la solicitud",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 395739384
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 56,
+            "name": "el sistema debe rechazar la guía",
+            "match": {
+              "location": "features/step_definitions/crearGuia.steps.ts:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2706365
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "crear-guía-con-servicio-de-recaudo-contra-entrega",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Crear guía con servicio de Recaudo Contra Entrega",
+    "tags": [],
+    "uri": "features/crear_guia.feature"
+  }
+]
