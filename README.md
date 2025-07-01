@@ -11,13 +11,6 @@ src/: Contiene la implementación de actores, tareas, preguntas e interacciones 
 
 test/: Carpeta que centraliza la ejecución de las pruebas y configuración de Playwright, incluyendo hooks y runners.
 
-COMANDOS PLAYWRIGHT
-
-Correr test : npm run test
-
-generar reporte : node generate-report.js
- 
-ver reporte: wslview cucumber_report.html
 
 
 Aqui Los resultados de las Pruebas 
